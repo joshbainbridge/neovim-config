@@ -1,0 +1,8 @@
+require('setup.gruvbox')
+require('setup.netrw')
+require('setup.lsp')
+require('setup.diagnostic')
+require('setup.fzf')
+require('setup.treesitter')
+require('setup.snippy')
+require('setup.cmp')
