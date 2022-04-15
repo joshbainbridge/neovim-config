@@ -12,7 +12,13 @@ cmp.setup({
     ['<CR>'] = cmp.mapping.confirm({ select = true }),
   }),
   sources = {
-    { name = 'nvim_lsp', group_index = 1, max_item_count = 5 },
-    { name = 'buffer', group_index = 2, max_item_count = 5 },
+    { name = 'nvim_lsp', group_index = 1, max_item_count = 10 },
+    { name = 'buffer', group_index = 2, max_item_count = 10 },
+  },
+  formatting = {
+    format = function(entry, vim_item)
+      vim_item.abbr = string.sub(vim_item.abbr, 1, 60)
+      return vim_item
+    end
   }
 })
