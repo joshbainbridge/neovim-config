@@ -19,6 +19,9 @@ vim.opt.list = true
 -- Prevent text from wrapping
 vim.opt.wrap = false
 
+-- Prevent the preview window
+vim.opt.completeopt = 'menuone,noselect'
+
 -- If ripgrep is found...
 if vim.fn.executable('rg') == 1 then
   -- Set grep command to use ripgrep

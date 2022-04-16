@@ -25,3 +25,6 @@
 [submodule "pack/plugins/start/nvim-treesitter"]
 	path = pack/plugins/start/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter.git
+[submodule "pack/plugins/start/lspkind-nvim"]
+	path = pack/plugins/start/lspkind-nvim
+	url = https://github.com/onsails/lspkind-nvim.git

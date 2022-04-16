@@ -10,9 +10,6 @@ local on_attach = function(client, bufnr)
   -- Always enable the sign column
   vim.opt.signcolumn = 'number'
 
-  -- Prevent the preview window
-  vim.opt.completeopt = 'menuone'
-
   -- Load buffer local functions
   local function keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
   local mapopt = { noremap = true, silent = true }

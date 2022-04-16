@@ -7,4 +7,8 @@ keymap('n', '<leader>d', '<cmd>lua vim.diagnostic.open_float()<CR>', mapopt)
 keymap('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>', mapopt)
 keymap('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>', mapopt)
 
-vim.diagnostic.config({virtual_text = false})
+-- Configuration for diagnostics
+vim.diagnostic.config({
+  virtual_text = false,
+  severity_sort = true,
+})
