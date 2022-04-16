@@ -36,7 +36,14 @@ local new_capabilities = require('cmp_nvim_lsp').update_capabilities(old_capabil
 
 -- Add setup for clangd server
 require('lspconfig').clangd.setup({
-  cmd = { "clangd", "--header-insertion-decorators=0" },
+  cmd = {
+    "clangd",
+    "--clang-tidy",
+    "--completion-style=bundled",
+    "--header-insertion=never",
+    "--header-insertion-decorators=0",
+    "--limit-results=10",
+  },
   on_attach = on_attach,
   capabilities = new_capabilities,
   flags = {
