@@ -7,7 +7,7 @@ require('cmp').setup({
   },
   mapping = require('cmp').mapping.preset.insert({
     ['<CR>'] = require('cmp').mapping.confirm({
-	  select = true
+	  select = false
     }),
   }),
   sources = {
