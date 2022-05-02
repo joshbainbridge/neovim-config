@@ -1,11 +1,13 @@
--- Local reference to plugin
+-- Local reference to plugins
 local cmp = require('cmp')
+local snippy = require('snippy')
+local lspkind = require('lspkind')
 
 -- Setup nvim-cmp for auto-completion
 cmp.setup({
   snippet = {
     expand = function(args)
-      require('snippy').expand_snippet(args.body)
+      snippy.expand_snippet(args.body)
     end,
   },
   completion = {
@@ -38,7 +40,7 @@ cmp.setup({
     { name = 'buffer', group_index = 2 },
   },
   formatting = {
-    format = require('lspkind').cmp_format({
+    format = lspkind.cmp_format({
       mode = 'symbol',
       maxwidth = 60,
     })

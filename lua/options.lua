@@ -30,3 +30,29 @@ if vim.fn.executable('rg') == 1 then
   -- Configure the format to match ripgrep
   vim.opt.grepformat = '%f:%l:%c:%m'
 end
+
+-- Set up the autocmds
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = {'cpp', 'c'},
+  callback = function(args)
+    -- Setting these according to h: tabstop
+    vim.opt.cindent = true
+
+    -- Always enable the number column
+    vim.opt.number = true
+
+    -- Always enable the sign column
+    vim.opt.signcolumn = 'number'
+  end,
+})
+
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = {'text', 'markdown'},
+  callback = function(args)
+    -- Enable spell checker
+    vim.opt.spell = true
+
+    -- Enable text wrap
+    vim.opt.wrap = true
+  end,
+})
