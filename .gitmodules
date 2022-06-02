@@ -25,3 +25,6 @@
 [submodule "pack/plugins/start/lspkind-nvim"]
 	path = pack/plugins/start/lspkind-nvim
 	url = https://github.com/onsails/lspkind-nvim.git
+[submodule "pack/github/opt/copilot.vim"]
+	path = pack/github/opt/copilot.vim
+	url = https://github.com/github/copilot.vim.git
