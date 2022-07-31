@@ -41,9 +41,14 @@ end
 vim.api.nvim_create_autocmd('FileType', {
   pattern = {'cpp', 'c'},
   callback = function(args)
+    -- Disable spell checker
+    vim.opt.spell = false
+
+    -- Disable text wrap
+    vim.opt.wrap = false
+
     -- Setting these according to h: tabstop
     vim.opt.cindent = true
-
   end,
 })
 
@@ -55,5 +60,8 @@ vim.api.nvim_create_autocmd('FileType', {
 
     -- Enable text wrap
     vim.opt.wrap = true
+
+    -- Setting these according to h: tabstop
+    vim.opt.cindent = false
   end,
 })
