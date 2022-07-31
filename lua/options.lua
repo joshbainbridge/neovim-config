@@ -22,6 +22,12 @@ vim.opt.wrap = false
 -- Prevent the preview window
 vim.opt.completeopt = 'menuone,noselect'
 
+-- Always enable the number column
+vim.opt.number = true
+
+-- Always enable the sign column
+vim.opt.signcolumn = 'number'
+
 -- If ripgrep is found...
 if vim.fn.executable('rg') == 1 then
   -- Set grep command to use ripgrep
@@ -38,11 +44,6 @@ vim.api.nvim_create_autocmd('FileType', {
     -- Setting these according to h: tabstop
     vim.opt.cindent = true
 
-    -- Always enable the number column
-    vim.opt.number = true
-
-    -- Always enable the sign column
-    vim.opt.signcolumn = 'number'
   end,
 })
 

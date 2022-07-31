@@ -43,6 +43,6 @@ cmp.setup({
     format = lspkind.cmp_format({
       mode = 'symbol',
       maxwidth = 60,
-    })
+    }),
   },
 })

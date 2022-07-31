@@ -28,3 +28,9 @@
 [submodule "pack/github/opt/copilot.vim"]
 	path = pack/github/opt/copilot.vim
 	url = https://github.com/github/copilot.vim.git
+[submodule "pack/plugins/start/null-ls.nvim"]
+	path = pack/plugins/start/null-ls.nvim
+	url = https://github.com/jose-elias-alvarez/null-ls.nvim.git
+[submodule "pack/plugins/start/plenary.nvim"]
+	path = pack/plugins/start/plenary.nvim
+	url = https://github.com/nvim-lua/plenary.nvim.git
