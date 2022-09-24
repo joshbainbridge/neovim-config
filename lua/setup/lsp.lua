@@ -35,11 +35,15 @@ lspconfig.clangd.setup({
   },
   on_attach = on_attach,
   capabilities = new_capabilities,
-  flags = {
-    debounce_text_changes = 150,
-  },
 })
 
+-- Add setup for rust-analyzer server
+lspconfig.rust_analyzer.setup({
+  on_attach = on_attach,
+  capabilities = new_capabilities,
+})
+
+-- Add setup for vale via null-ls
 null_ls.setup({
   sources = {
     null_ls.builtins.diagnostics.vale,
