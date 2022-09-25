@@ -14,7 +14,7 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>')
 
   -- Set up key bindings for the language server with leader
-  vim.keymap.set('n', '<leader>f', '<cmd>lua vim.lsp.buf.formatting()<CR>')
+  vim.keymap.set('n', '<leader>f', '<cmd>lua vim.lsp.buf.format({ async = false })<CR>')
   vim.keymap.set('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>')
   vim.keymap.set('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>')
 end
