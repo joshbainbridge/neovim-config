@@ -28,6 +28,9 @@ vim.opt.number = true
 -- Always enable the sign column
 vim.opt.signcolumn = 'number'
 
+-- Disable mouse selection
+vim.opt.mouse = ''
+
 -- If ripgrep is found...
 if vim.fn.executable('rg') == 1 then
   -- Set grep command to use ripgrep
