@@ -25,3 +25,6 @@
 [submodule "pack/plugins/start/lspkind-nvim"]
 	path = pack/plugins/start/lspkind-nvim
 	url = https://github.com/onsails/lspkind-nvim.git
+[submodule "pack/plugins/start/fzf.vim"]
+	path = pack/plugins/start/fzf.vim
+	url = git@github.com:junegunn/fzf.vim.git
