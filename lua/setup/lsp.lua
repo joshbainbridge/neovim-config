@@ -46,6 +46,6 @@ lspconfig.rust_analyzer.setup({
 -- Add setup for vale via null-ls
 null_ls.setup({
   sources = {
-    null_ls.builtins.diagnostics.vale,
+    -- null_ls.builtins.diagnostics.vale,
   },
 })
