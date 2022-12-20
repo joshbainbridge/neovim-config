@@ -1,7 +1,6 @@
 -- Local reference to plugins
 local cmp_nvim_lsp = require('cmp_nvim_lsp')
 local lspconfig = require('lspconfig')
-local null_ls = require('null-ls')
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
@@ -41,11 +40,4 @@ lspconfig.clangd.setup({
 lspconfig.rust_analyzer.setup({
   on_attach = on_attach,
   capabilities = new_capabilities,
-})
-
--- Add setup for vale via null-ls
-null_ls.setup({
-  sources = {
-    -- null_ls.builtins.diagnostics.vale,
-  },
 })
