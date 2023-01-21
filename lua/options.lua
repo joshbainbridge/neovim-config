@@ -31,6 +31,9 @@ vim.opt.signcolumn = 'number'
 -- Disable mouse selection
 vim.opt.mouse = ''
 
+-- Add padding to scroll
+vim.opt.scrolloff = 5
+
 -- If ripgrep is found...
 if vim.fn.executable('rg') == 1 then
   -- Set grep command to use ripgrep
