@@ -28,9 +28,6 @@
 [submodule "pack/plugins/start/fzf.vim"]
 	path = pack/plugins/start/fzf.vim
 	url = git@github.com:junegunn/fzf.vim.git
-[submodule "pack/plugins/start/nvim-treesitter-context"]
-	path = pack/plugins/start/nvim-treesitter-context
-	url = https://github.com/nvim-treesitter/nvim-treesitter-context.git
 [submodule "pack/plugins/start/nvim-treesitter-refactor"]
 	path = pack/plugins/start/nvim-treesitter-refactor
 	url = https://github.com/nvim-treesitter/nvim-treesitter-refactor.git
